@@ -454,7 +454,7 @@ def is_valid_article_url(url: str) -> bool:
     return True
 
 
-
+def normalize_url(url: str) -> str:
     if not isinstance(url, str):
         return ""
     url = url.strip().rstrip("/")
